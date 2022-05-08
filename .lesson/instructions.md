@@ -10,6 +10,8 @@
 
 * The midterm involves quite a lot of __plotting__; I have used the library `matplotlib.pyplot` extensively in the sample midterm because I find it easier for you to apply to time series, compared to `seaborn`. However, you are of course free to use `seaborn` if you prefer.
 
+* Store the plots in files with `plt.savefig()`; clean the canvas after every plot with `plt.clf()`
+
 * For the exercises below you will need the following libraries, parameters, and code to create the path for the plots:
 
 ```python
@@ -40,7 +42,7 @@ directory = "plots"
 Path(directory).mkdir(parents=True, exist_ok=True)
 ```
 
-## Exercise 1: [45 pts]
+## Exercise 1: Exploratory analysis and regression [45 pts]
 
 (1) [5 pts] Load the dataset stored in `.lesson/assets/winequality-red.csv`. The separator is a semicolon.
 
@@ -60,5 +62,19 @@ Path(directory).mkdir(parents=True, exist_ok=True)
 
 (9) [5 pts] Estimate the probabilities that a wine is red given its `alcohol` is 11, its `pH` is 3.3, its `chlorides` are 0.06, and its `density` is 1.
 
-## Exercise 2: []
+## Exercise 2: Statistical methods for time series [30 pts]
+
+(1) [5 pts] Read the file `.lesson/assets/plrx.txt`; the separator is the tab keystroke `\t`
+
+(2) [5 pts] We will use the time series in column `col1`. Plot the time series.
+
+(3) [5 pts] Plot the autocorrelation function and the partial autocorrelation function.
+
+(4) [5 pts] Split the time series into train (from element `0` until element `175`) and test (from element `175` until the end) set.
+
+(5) [5 pts] Fit an autoarima model to the time series.
+
+(6) [5 pts] Print the summary of the model, and plot the prediction together with the actuals.
+
+## Exercise 3: Bayesian statistics [30 pts]
 
