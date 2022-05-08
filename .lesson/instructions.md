@@ -60,7 +60,7 @@ Path(directory).mkdir(parents=True, exist_ok=True)
 
 (6) [5 pts] Build another linear regression with the regressors `alcohol`, `pH`, `chlorides`, and `density` in order to predict the `quality`. Print the intercept and slope of `alcohol`.
 
-(7) [5 pts] Load the dataset stored in `.lesson/assets/winequality-white.csv`. Concatenate it to the dataset we read in (1).
+(7) [5 pts] Load the dataset stored in `.lesson/assets/winequality-white.csv`. Concatenate it to the dataset we read in (1). Draw a boxplot showing the quality distribution of each type of wine.
 
 (8) [5 pts] Build a logistic regression that predicts whether a wine is red or white based on the same regressors we used in (6). You will need to generate a binary variable named `red`.
 
