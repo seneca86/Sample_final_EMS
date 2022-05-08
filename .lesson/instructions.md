@@ -42,9 +42,9 @@ directory = "plots"
 Path(directory).mkdir(parents=True, exist_ok=True)
 ```
 
-## Exercise 1: Exploratory analysis and regression [45 pts]
+## Exercise 1: Exploratory analysis and regression [40 pts]
 
-(1) [5 pts] Load the dataset stored in `.lesson/assets/winequality-red.csv`. The separator is a semicolon.
+(1) [0 pts] Load the dataset stored in `.lesson/assets/winequality-red.csv`. The separator is a semicolon.
 
 (2) [5 pts] Count the number of occurrences of each value of `quality`, i.e. how many red wines score quality 0, how many score quality 1, and so on.
 
@@ -76,5 +76,17 @@ Path(directory).mkdir(parents=True, exist_ok=True)
 
 (6) [5 pts] Print the summary of the model, and plot the prediction together with the actuals.
 
-## Exercise 3: Bayesian statistics [30 pts]
+## Exercise 3: Bayesian statistics [35 pts]
 
+
+(1) [10 pts] M&M’s are small candy-coated chocolates that come in a variety of colors. Mars, Inc., which makes M&M’s, changes the mixture of colors from time to time. In 1995, they introduced blue M&M’s.
+
+* In 1994, the color mix in a bag of plain M&M’s was 30% Brown, 20% Yellow, 20% Red, 10% Green, 10% Orange, 10% Tan.
+
+* In 1996, it was 24% Blue , 20% Green, 16% Orange, 14% Yellow, 13% Red, 13% Brown.
+
+Suppose a friend of mine has two bags of M&M’s, and he tells me that one is from 1994 and one from 1996. He won’t tell me which is which, but he gives me one M&M from each bag. One is yellow and one is green. What is the probability that the yellow one came from the 1994 bag?
+
+(2) [10 pts] Suppose you meet someone and learn that they have two children. You ask if either child is a girl and they say yes. What is the probability that both children are girls?
+
+(3) [15 pts] Load the `titanic` dataset from `seaborn`. Calculate the probability of survival conditional on being an adult male.

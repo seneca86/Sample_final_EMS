@@ -122,4 +122,36 @@ plt.savefig(directory + "/autoarima")
 plt.clf()
 
 # Exercise 3
+
+# %%
+# Hypothesis A: yellow from 1994, green from 1996
+# Hypothesis B: yellow from 1996, green from 1994
+candy = pd.DataFrame(index=['1994', '1996'])
+candy['prior'] = 1/2, 1/2
+candy['likelihood'] = 0.2 * 0.2, 0.14 * 0.1
+candy['unnorm'] = candy['prior'] * candy['likelihood']
+prob_norm = candy.unnorm.sum()
+candy['posterior'] = candy['unnorm'] / prob_norm
+candy.head()
+# %%
+children = pd.DataFrame(index=['BB', 'BG', 'GB', 'GG'])
+children['prior'] = 1/4, 1/4, 1/4, 1/4
+children['likelihood'] = 0, 1, 1, 1
+children['unnorm'] = children.prior * children.likelihood
+prob_data = children.unnorm.sum()
+children['posterior'] = children.unnorm / prob_data
+children.head()
+# %%
+def prob(proposition):
+    return proposition.mean()
+
+# %%
+def conditional(proposition, given):
+    return prob(proposition[given])
+
+# %%
+titanic = sns.load_dataset('titanic')
+titanic.head()
+# %%
+conditional(titanic.survived, given = titanic.adult_male)
 # %%
