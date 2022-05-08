@@ -80,7 +80,7 @@ Path(directory).mkdir(parents=True, exist_ok=True)
 
 (6) [5 pts] Print the summary of the model, and plot the prediction together with the actuals.
 
-## Exercise 3: Bayesian statistics [35 pts]
+## Exercise 3: Bayesian statistics [30 pts]
 
 
 (1) [10 pts] M&M’s are small candy-coated chocolates that come in a variety of colors. Mars, Inc., which makes M&M’s, changes the mixture of colors from time to time. In 1995, they introduced blue M&M’s.
@@ -93,4 +93,4 @@ Suppose a friend of mine has two bags of M&M’s, and he tells me that one is fr
 
 (2) [10 pts] Suppose you meet someone and learn that they have two children. You ask if either child is a girl and they say yes. What is the probability that both children are girls?
 
-(3) [15 pts] Load the `titanic` dataset from `seaborn`. Calculate the probability of survival conditional on being an adult male.
+(3) [10 pts] Load the `titanic` dataset from `seaborn`. Calculate the probability of survival conditional on being an adult male.
