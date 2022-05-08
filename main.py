@@ -45,7 +45,7 @@ plt.scatter(x='alcohol',y='quality', c='pH', data=red_wine)
 plt.xlabel('alcohol')
 plt.ylabel('quality')
 plt.legend()
-plt.savefig(directory + 'quality_alcohol_scatter.png')
+plt.savefig(directory + '/quality_alcohol_scatter.png')
 plt.clf()
 # %%
 formula = 'quality ~ alcohol + pH + chlorides + density'
@@ -67,7 +67,7 @@ plt.boxplot(x=[red_wine.quality, white_wine.quality])
 plt.xlabel('category')
 plt.ylabel('quality')
 plt.legend()
-plt.savefig(directory + 'category_wine_boxplot.png')
+plt.savefig(directory + '/category_wine_boxplot.png')
 plt.clf()
 # %%
 wine['red'] = (wine['category'] == 'red') * 1
