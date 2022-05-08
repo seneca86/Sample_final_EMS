@@ -28,7 +28,7 @@ red_wine = pd.read_csv('.lesson/assets/winequality-red.csv', sep=';')
 red_wine['quality'].value_counts()
 # %%
 plt.hist(red_wine[['quality', 'alcohol']], rwidth=1, bins=10, label='quality')
-plt.savefig(directory + 'quality_alcohol_hist.png')
+plt.savefig(directory + '/quality_alcohol_hist.png')
 plt.clf()
 # %%
 formula = 'quality ~ alcohol'
